@@ -1,5 +1,6 @@
 const mainDisplay = document.querySelector('#main-display');
 let previousOperand = 0;
+let currentOperand = 0;
 let currentOperator = '';
 const numbers = document.querySelectorAll('[data-num]');
 const operators = document.querySelectorAll('[data-op]');
@@ -31,12 +32,23 @@ function operation() {
 
 }
 
+//Performs corresponding operation on the two numbers
 function executeOperation() {
     let newMain = parseFloat(mainDisplay.innerText);
     switch (currentOperator) {
         case '+':
-            mainDisplay.innerText = newMain + previousOperand;
+            mainDisplay.innerText = previousOperand + newMain;
             break;
+        case '-':
+            mainDisplay.innerText = previousOperand - newMain;
+            break;
+        case '÷':
+            mainDisplay.innerText = previousOperand / newMain;
+            break;
+        case 'x':
+            mainDisplay.innerText = previousOperand * newMain;
+            break;
+        
     }
 
 }
