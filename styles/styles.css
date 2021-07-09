@@ -1,6 +1,6 @@
 .body { 
     height: 100vh;
-    weight: 100vw;
+    width: 100vw;
     display: flex;  
     flex-direction: column; 
     align-items: center;
@@ -15,6 +15,10 @@
     
 }
 
+.button:hover {
+    background-color: #e49da9;
+}
+
 [data-clear = 'clear'] {
     grid-column: 1 / 3;
 }
@@ -23,10 +27,11 @@
 }
 
 .main-calculator {
-    height: 70vmin;
+    height: 80vmin;
     width: 60vmin;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     background-color: lightblue;
     border: 1px solid black;
 }
@@ -37,6 +42,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-size: 2em;
+    font-size: 8vmin;
     padding-right: 10px;
+    
 }
