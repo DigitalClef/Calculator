@@ -32,6 +32,10 @@
     background-color: greenyellow;
 }
 
+#header {
+    font-family: 'Orbitron', sans-serif;
+}
+
 .main-calculator {
     height: 80vmin;
     width: 60vmin;
