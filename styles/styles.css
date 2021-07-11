@@ -8,10 +8,11 @@
 }
 
 .button {
-    background-color: lightskyblue;
+    background-color: rgb(96, 218, 255);
     margin: 0px;
     border: 1px solid black;
     font-size: 1.5em;
+    border-radius: 5%;
     
 }
 
@@ -36,8 +37,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: lightblue;
-    border: 1px solid black;
+    background-color: rgb(251, 223, 249);
+    border: 2px solid black;
+    border-radius: 3%;
+    gap: 2%;
+    padding: 1%;
 }
 
 #main-display {
@@ -48,5 +52,6 @@
     align-items: center;
     font-size: 8vmin;
     padding-right: 10px;
-    
+    border: 1px solid black;
+    background-color: rgb(169, 182, 178);
 }
