@@ -92,7 +92,7 @@ function solve() {
     }
     
     // Changes numerical format to scientific notation if the output exceeds the space within the viewing window
-    if ((final.toString().length > 14 && Math.abs(final) > 99999999999999) || Math.abs(final) <= .0001) { 
+    if ((final.toString().length > 10 && Math.abs(final) > 99999999999999) || Math.abs(final) <= .0001) { 
         final = final.toExponential(4);
     }
     else if (Math.abs(final) >= 1 && (final % 1) !== 0) { //Only allows two decimal places if number is positive
