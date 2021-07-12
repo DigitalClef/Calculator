@@ -24,7 +24,7 @@ function lengthChecker(value) {
 //Appends character that user inputs
 function appendNumber(value) {
     //implemented so that numbers do not exceed display window of calculator
-    if (value === '.' && mainDisplay.innerText.includes('.')) {
+    if (value === '.' && currentOperand.includes('.')) {
         return;
     }
     
