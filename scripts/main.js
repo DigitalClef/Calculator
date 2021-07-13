@@ -16,7 +16,7 @@ function display(value) {
 
 //Allows users to input to enter certain amount of characters that fit in the display window
 function lengthChecker(value) {
-    if (value.length < 14) {
+    if (value.length < 10) {
         return true;
     }
 };
@@ -92,7 +92,7 @@ function solve() {
     }
     
     // Changes numerical format to scientific notation if the output exceeds the space within the viewing window
-    if ((final.toString().length > 10 && Math.abs(final) > 99999999999999) || Math.abs(final) <= .0001) { 
+    if ((final.toString().length > 10 && Math.abs(final) > 9999999999) || Math.abs(final) <= .0001) { 
         final = final.toExponential(4);
     }
     else if (Math.abs(final) >= 1 && (final % 1) !== 0) { //Only allows two decimal places if number is positive
@@ -143,7 +143,7 @@ execute.onclick = solve; //User clicks the equal sign button
 clear.onclick = clearNumbers; //User clicks clear button
 del.onclick = deleteNumbers; //User clicks delete button
 
-//Implementes keyboard functionality
+//Implements keyboard functionality
 document.onkeydown = function(e) {
     if (e.key >=0 && e.key <= 9) { //Users keys a number
         appendNumber(e.key);
